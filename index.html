@@ -85,7 +85,7 @@ window.addEventListener("touchstart",function(e){
   const audio=document.querySelector(`audio[data-key="${selected}"`);
   const key=document.querySelector(`.key[data-key="${selected}"`);
   if (!audio) return;
-  audio.currentTiem=0;
+  audio.currentTime=0;
   audio.play();
   console.log("click");
   key.classList.add("playing");
