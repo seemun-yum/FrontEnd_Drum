@@ -80,7 +80,7 @@ keys.forEach(key =>key.addEventListener("transitionend",removeTransition));
 window.addEventListener("keydown",keyplaySound);
 
 
-window.addEventListerner("touchstart",function(e){
+window.addEventListener("touchstart",function(e){
   const selected=e.target.parentNode.getAttribute("data-key");
   const audio=document.querySelector(`audio[data-key="${selected}"`);
   const key=document.querySelector(`.key[data-key="${selected}"`);
