@@ -78,7 +78,7 @@ function removeTransition(e){
 const keys=document.querySelectorAll(".key");
 keys.forEach(key =>key.addEventListener("transitionend",removeTransition));
 window.addEventListener("keydown",keyplaySound);
-window.addEventListener("click",() =>{
+window.addEventListener("click",function() =>{
   const selected=e.target.parentNode.getAttribute("data-key");
   const audio=document.querySelector(`audio[data-key="${selected}"`);
   const key=document.querySelector(`.key[data-key="${selected}"`);
